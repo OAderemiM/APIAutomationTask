@@ -1,0 +1,193 @@
+{
+	"id": "4b7a869a-faff-4447-bbc1-d9d62f7236ef",
+	"name": "Obi_Aderemi",
+	"timestamp": "2020-11-24T11:52:53.823Z",
+	"collection_id": "233ba4c8-8f36-4403-b3b5-88d54fc35ede",
+	"folder_id": 0,
+	"environment_id": "63d7cfa9-f5f7-4e3a-a6a3-2993b4f2be09",
+	"totalPass": 3,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "1cf896c3-a18a-48fb-92af-c64be51cfee8",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 913,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				913
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "e42ae950-7e5d-46d0-ac9f-7796f815525a",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				162
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7c1c755f-0216-4be4-9d64-b52990a7e128",
+			"name": "Create new Entry",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 158,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				158
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cc6d6fef-ab58-4291-8b0c-80e9d5b559d6",
+			"name": "Get entry per ID",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2",
+			"time": 460,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				460
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "23d8a51d-f35e-48f6-ab37-8c1ce3b2bb06",
+			"name": "Delete a todo per ID",
+			"url": "https://demo.fusio-project.org/index.php/todo?todo_id=2",
+			"time": 200,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				200
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b6d645ff-239f-4c41-8902-ccf36c0bf5ce",
+			"name": "GET single to do",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2",
+			"time": 861,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				861
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "95caa747-e458-4f3d-b7de-199066bd6e42",
+			"name": "GET user",
+			"url": "https://reqres.in/api/user",
+			"time": 950,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				950
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3704,
+	"collection": {
+		"requests": [
+			{
+				"id": "1cf896c3-a18a-48fb-92af-c64be51cfee8",
+				"method": "GET"
+			},
+			{
+				"id": "e42ae950-7e5d-46d0-ac9f-7796f815525a",
+				"method": "GET"
+			},
+			{
+				"id": "7c1c755f-0216-4be4-9d64-b52990a7e128",
+				"method": "POST"
+			},
+			{
+				"id": "cc6d6fef-ab58-4291-8b0c-80e9d5b559d6",
+				"method": "GET"
+			},
+			{
+				"id": "23d8a51d-f35e-48f6-ab37-8c1ce3b2bb06",
+				"method": "DELETE"
+			},
+			{
+				"id": "b6d645ff-239f-4c41-8902-ccf36c0bf5ce",
+				"method": "GET"
+			},
+			{
+				"id": "95caa747-e458-4f3d-b7de-199066bd6e42",
+				"method": "GET"
+			}
+		]
+	}
+}
