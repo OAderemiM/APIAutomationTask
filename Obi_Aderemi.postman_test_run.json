@@ -1,18 +1,18 @@
 {
-	"id": "4b7a869a-faff-4447-bbc1-d9d62f7236ef",
+	"id": "6cd25b17-7e50-4327-b631-b3551b231275",
 	"name": "Obi_Aderemi",
-	"timestamp": "2020-11-24T11:52:53.823Z",
+	"timestamp": "2020-11-24T13:42:40.575Z",
 	"collection_id": "233ba4c8-8f36-4403-b3b5-88d54fc35ede",
 	"folder_id": 0,
 	"environment_id": "63d7cfa9-f5f7-4e3a-a6a3-2993b4f2be09",
-	"totalPass": 3,
+	"totalPass": 15,
 	"totalFail": 0,
 	"results": [
 		{
 			"id": "1cf896c3-a18a-48fb-92af-c64be51cfee8",
 			"name": "Get All Todo Entries",
 			"url": "https://demo.fusio-project.org/index.php/todo",
-			"time": 913,
+			"time": 777,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -37,7 +37,7 @@
 				}
 			},
 			"times": [
-				913
+				777
 			],
 			"allTests": [
 				{
@@ -51,7 +51,7 @@
 			"id": "e42ae950-7e5d-46d0-ac9f-7796f815525a",
 			"name": "Get All Entries",
 			"url": "https://demo.fusio-project.org/index.php/",
-			"time": 162,
+			"time": 188,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -59,7 +59,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				162
+				188
 			],
 			"allTests": [
 				{}
@@ -69,7 +69,7 @@
 			"id": "7c1c755f-0216-4be4-9d64-b52990a7e128",
 			"name": "Create new Entry",
 			"url": "https://demo.fusio-project.org/index.php/todo",
-			"time": 158,
+			"time": 236,
 			"responseCode": {
 				"code": 500,
 				"name": "Internal Server Error"
@@ -77,7 +77,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				158
+				236
 			],
 			"allTests": [
 				{}
@@ -87,7 +87,7 @@
 			"id": "cc6d6fef-ab58-4291-8b0c-80e9d5b559d6",
 			"name": "Get entry per ID",
 			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2",
-			"time": 460,
+			"time": 558,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -95,7 +95,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				460
+				558
 			],
 			"allTests": [
 				{}
@@ -105,7 +105,7 @@
 			"id": "23d8a51d-f35e-48f6-ab37-8c1ce3b2bb06",
 			"name": "Delete a todo per ID",
 			"url": "https://demo.fusio-project.org/index.php/todo?todo_id=2",
-			"time": 200,
+			"time": 161,
 			"responseCode": {
 				"code": 500,
 				"name": "Internal Server Error"
@@ -113,7 +113,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				200
+				161
 			],
 			"allTests": [
 				{}
@@ -123,7 +123,7 @@
 			"id": "b6d645ff-239f-4c41-8902-ccf36c0bf5ce",
 			"name": "GET single to do",
 			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2",
-			"time": 861,
+			"time": 538,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -131,7 +131,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				861
+				538
 			],
 			"allTests": [
 				{}
@@ -141,7 +141,7 @@
 			"id": "95caa747-e458-4f3d-b7de-199066bd6e42",
 			"name": "GET user",
 			"url": "https://reqres.in/api/user",
-			"time": 950,
+			"time": 142,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -149,15 +149,171 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				950
+				142
 			],
 			"allTests": [
 				{}
 			]
+		},
+		{
+			"id": "ce3b10ee-32fd-4224-a85f-790323ae8fc0",
+			"name": "Get All Entries todo",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo%20id=2",
+			"time": 223,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Status code name has OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				223
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Status code name has OK string": true
+				}
+			]
+		},
+		{
+			"id": "68021480-b365-4f92-a3da-5cf776a33813",
+			"name": "Create ",
+			"url": "https://reqres.in/api/user/create",
+			"time": 591,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Status code name has letter": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has letter": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				591
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Status code name has letter": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "501f241f-576c-44a1-a1ab-56660c626ba1",
+			"name": "PUT Update",
+			"url": "https://reqres.in/api/user/2/user/%7Bid%7D",
+			"time": 607,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				607
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "b7585bf9-dcb1-42c0-84e8-cccc3272af97",
+			"name": "Delete Update",
+			"url": "https://reqres.in/api/user/2/user/%7Bid%7D",
+			"time": 585,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time is less than 200ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				585
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time is less than 200ms": true,
+					"Status code name has string": true
+				}
+			]
 		}
 	],
 	"count": 1,
-	"totalTime": 3704,
+	"totalTime": 4606,
 	"collection": {
 		"requests": [
 			{
@@ -187,6 +343,22 @@
 			{
 				"id": "95caa747-e458-4f3d-b7de-199066bd6e42",
 				"method": "GET"
+			},
+			{
+				"id": "ce3b10ee-32fd-4224-a85f-790323ae8fc0",
+				"method": "GET"
+			},
+			{
+				"id": "68021480-b365-4f92-a3da-5cf776a33813",
+				"method": "POST"
+			},
+			{
+				"id": "501f241f-576c-44a1-a1ab-56660c626ba1",
+				"method": "PUT"
+			},
+			{
+				"id": "b7585bf9-dcb1-42c0-84e8-cccc3272af97",
+				"method": "DELETE"
 			}
 		]
 	}
